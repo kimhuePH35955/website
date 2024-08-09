@@ -34,7 +34,7 @@ const Register = () => {
         Đăng kí
       </h1>
       <Form
-        className="w-full max-w-md" // Giới hạn chiều rộng tối đa của Form
+        className="w-full max-w-md"
         form={form}
         name="basic"
         labelCol={{ span: 8 }}

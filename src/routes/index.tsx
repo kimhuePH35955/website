@@ -12,6 +12,8 @@ import Cart from "@/pages/(client)/Cart";
 import Login from "@/pages/(client)/Login";
 import Register from "@/pages/(client)/Register";
 import ListProduct from "@/pages/(client)/ListProduct";
+import PrivateRoute from "./PrivateRoute";
+import Categories from "@/pages/(admin)/Categories/Categories";
 
 const Router = () => {
   return (
@@ -22,16 +24,25 @@ const Router = () => {
           <Route path="products" element={<ListProduct />} />
           <Route path="products/:id" element={<ProductDetail />} />
           <Route path="cart" element={<Cart />} />
-          <Route path="login" element={<Login/>}/>
-          <Route path="register" element={<Register/>}/>
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
         </Route>
 
-        <Route path="/admin" element={<LayoutAdmin />}>
+        <Route
+          path="/admin"
+          element={
+            <PrivateRoute allowedRole={1}>
+              <LayoutAdmin />
+            </PrivateRoute>
+          }
+        >
           <Route index element={<HomeAdmin />} />
           <Route path="products" element={<Products />} />
           <Route path="products/add" element={<ProductAdd />} />
           <Route path="products/edit/:id" element={<ProductEdit />} />
+          <Route path="categories" element={<Categories/>} />
         </Route>
+
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

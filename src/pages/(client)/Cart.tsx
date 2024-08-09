@@ -1,16 +1,27 @@
-import {
-  ArrowBlack,
-  ArrowRight,
-  DeleteCart,
-  ImgCart,
-} from "@/components/icons";
+
+
+
+
+import { ArrowBlack, ArrowRight, DeleteCart, ImgCart } from "@/components/icons";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Cart = () => {
+// interface ICart {
+//   id: number;
+//   name: string;
+//   quantity: number;
+// }
+
+const ShoppingCart: React.FC = () => {
+  // const [cart, setCart] = useState<ICart[]>([]);
+  // const [messageAPI, contextHolder] = message.useMessage();
+
+
+
   return (
-    <>
+ <>
       <div>
+        {/* {contextHolder} */}
         <div className="w-[1310px] flex  m-auto h-[76px]  items-center mb-[100px]">
           <Link to="" className="font-medium mr-[20px] flex">
             Home
@@ -170,4 +181,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default ShoppingCart;

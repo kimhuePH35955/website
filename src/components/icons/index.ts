@@ -2,7 +2,7 @@ import UserIcon from "@/assets/icons/1.svg";
 import SearchIcon from "@/assets/icons/2.svg";
 import WishlistIcon from "@/assets/icons/3.svg";
 import CartIcon from "@/assets/icons/3.svg";
-import Logo from "@/assets/logo.svg";
+import LogoWebsite from "@/assets/logo.svg";
 import Map from "@/assets/icons/map_home.svg";
 import CarHome from "@/assets/icons/car_home.svg";
 import UserHome from "@/assets/icons/user_home.svg";
@@ -40,7 +40,7 @@ export {
   SearchIcon,
   WishlistIcon,
   CartIcon,
-  Logo,
+  LogoWebsite,
   Map,
   CarHome,
   UserHome,
@@ -72,5 +72,5 @@ export {
   CameraBoxPrHome,
   HeartDetail,
   ImgCart,
-  DeleteCart
+  DeleteCart,
 };
