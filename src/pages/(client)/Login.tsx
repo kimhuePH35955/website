@@ -1,6 +1,7 @@
 import { IUser } from "@/common/types/user";
 import instance from "@/configs/axios";
 import { Button, Form, FormProps, Input, message } from "antd";
+import { useNavigate } from "react-router-dom";
 
 type FieldType = {
   id?: number;
@@ -11,20 +12,18 @@ type FieldType = {
 const Login = () => {
   const [messageApi, contextHolder] = message.useMessage();
   const [form] = Form.useForm();
+  const navigate = useNavigate();
 
   const onFinish: FormProps<FieldType>["onFinish"] = async (values) => {
     try {
       const user: IUser = {
-        // id: values.id,
         email: values.email || "",
         password: values.password || "",
       };
       const { data } = await instance.post(`/signin`, user);
-      console.log(data);
       localStorage.setItem("user", JSON.stringify(data));
-      console.log(data?.user); // Kiểm tra cấu trúc user
-
-      messageApi.success("Đăng nhập thành công");
+      alert("Đăng nhập thành công");
+      navigate("/");
     } catch (error) {
       messageApi.error("Đăng nhập thất bại. Vui lòng đăng nhập lại");
     }

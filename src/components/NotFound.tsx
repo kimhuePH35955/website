@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 const NotFound = () => {
   return (
     <div className="m-auto w-max">
-    <p className="py-4">Đường dẫn không tồn tại</p>
+      <p className="py-4">Đường dẫn không tồn tại</p>
       <br />
-      <Link to={"/admin"}>
+      <Link to={"/"}>
         <Button type="primary">
           <BackwardFilled />
           Quay lại trang quản lí

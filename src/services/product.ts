@@ -53,3 +53,6 @@ export const getProductsById = async (id:any) => {
       console.log(error);
   }
 }
+
+
+

@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CarHome, CartHome, HeartHome, LogoWebsite, Map, UserHome } from "./icons";
+import { CarHome, CartHome, LogoWebsite, Map, UserHome } from "./icons";
 
 type Props = {};
 
 const Header = (_props: Props) => {
   return (
     <>
-      {/* info- header */}
       <div className="text-[14px] w-full m-auto h-[72px] flex justify-between items-center">
         <p>Hotline: 0369681754</p>
         <div className="flex w-[300px] justify-between">
@@ -22,7 +21,6 @@ const Header = (_props: Props) => {
         </div>
       </div>
 
-      {/* header */}
       <header className=" bg-[#003f62] text-white">
         <div className="w-[1310px] h-[100px] w-100 mx-auto flex justify-between ">
           <div className="flex text-[14px] items-center">
@@ -35,14 +33,20 @@ const Header = (_props: Props) => {
                 placeholder="Tìm kiếm"
                 type="text"
               />
-              <button className="rounded-[16px] font-semibold bg-[#eda415] w-[132px] h-full absolute right-0 top-0">
+              <button
+                type="submit"
+                className="rounded-[16px] font-semibold bg-[#eda415] text-white w-[132px] h-full absolute right-0 top-0 flex items-center justify-center"
+              >
                 Search
               </button>
             </form>
           </div>
           <div className="flex mr-3 text-right ">
             <div className="flex justify-between mr-3 ">
-            <Link to="" className="flex items-center justify-between mr-8">
+              <Link
+                to={`/carts`}
+                className="flex items-center justify-between mr-8"
+              >
                 <div className="flex items-center justify-between ">
                   <img className=" w-[24px] h-[24px] absolute" src={CartHome} />
                   <span className=" relative left-2 bottom-3  px-[5px] py-[2px] bg-[#EDA415] text-[10px] rounded-full ml-1">
@@ -56,21 +60,6 @@ const Header = (_props: Props) => {
                 <span className="ml-[13px]" />
                 <span>Tài khoản</span>
               </Link>
-              {/* <Link
-                to="/register"
-                className="flex items-center justify-between mr-4"
-              >
-                <div className="flex items-center justify-between ">
-                  <img
-                    className=" w-[24px] h-[24px]"
-                    src={HeartHome}
-                    alt="Yêu thích icon"
-                  />
-                </div>
-                <span className="ml-[13px]" />
-                <span>Đăng kí</span>
-              </Link> */}
-             
             </div>
           </div>
         </div>

@@ -55,13 +55,14 @@ const LayoutAdmin: React.FC = () => {
               key: "3",
               icon: <UserOutlined/>,
               label: <NavLink to="/user">Tài khoản</NavLink>,
-            },
+            }
+            // ,
            
-            {
-              key: "4",
-              icon: <MenuFoldOutlined/>,
-              label: <NavLink to="/admin/categories">Danh mục</NavLink>,
-            },
+            // {
+            //   key: "4",
+            //   icon: <MenuFoldOutlined/>,
+            //   label: <NavLink to="/admin/categories">Danh mục</NavLink>,
+            // },
           ]}
         />
       </Sider>

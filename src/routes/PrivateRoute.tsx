@@ -9,7 +9,7 @@ const PrivateRoute: React.FC<PrivateRouteProps> = ({ children, allowedRole }) =>
     const user = localStorage.getItem('user');
     const data = user ? JSON.parse(user) : {};
 
-    const userRole = data?.user?.role ?? -1;
+    const userRole = data?.user?.role ?? 0;
 
     if (userRole === allowedRole) {
         return <>{children}</>;

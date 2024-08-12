@@ -13,7 +13,7 @@ import Login from "@/pages/(client)/Login";
 import Register from "@/pages/(client)/Register";
 import ListProduct from "@/pages/(client)/ListProduct";
 import PrivateRoute from "./PrivateRoute";
-import Categories from "@/pages/(admin)/Categories/Categories";
+import SearchProduct from "@/pages/(client)/SearchProduct";
 
 const Router = () => {
   return (
@@ -21,9 +21,13 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<LayoutWebsite />}>
           <Route index element={<HomeWebsite />} />
-          <Route path="products" element={<ListProduct />} />
+
+          <Route path="products" element={<ListProduct />}>
+            <Route path="search" element={<SearchProduct />} />
+          </Route>
+
           <Route path="products/:id" element={<ProductDetail />} />
-          <Route path="cart" element={<Cart />} />
+          <Route path="carts" element={<Cart />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
         </Route>
@@ -40,7 +44,7 @@ const Router = () => {
           <Route path="products" element={<Products />} />
           <Route path="products/add" element={<ProductAdd />} />
           <Route path="products/edit/:id" element={<ProductEdit />} />
-          <Route path="categories" element={<Categories/>} />
+          {/* <Route path="categories" element={<Categories />} /> */}
         </Route>
 
         <Route path="*" element={<NotFound />} />

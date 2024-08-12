@@ -16,6 +16,7 @@ const Register = () => {
       const user: IUser = {
         email: values.email || "",
         password: values.password || "",
+        role:0
       };
       const {data} = await instance.post(`/signup`, user);
       messageApi.success("Đăng kí thành công");

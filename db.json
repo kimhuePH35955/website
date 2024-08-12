@@ -112,48 +112,9 @@
   "users": [
     {
       "email": "phue6203@gmail.com",
-      "password": "$2a$10$XD1HL8Ky.kmnBt44WR18q.pwZgWB7T0DJPl6hgtkK7j9wiiQwXEmW",
-      "id": 1,
-      "role": 1
-    },
-    {
-      "email": "kimhue@gmail.com",
-      "password": "$2a$10$S.ASwRXQXihy77jRGI26DuenJ/MbYhaH.09Nl/h1/OePyi.zoAGfe",
-      "id": 2,
-      "role": 0
-    },
-    {
-      "email": "kimhue123@gmail.com",
-      "password": "$2a$10$/KG.h0VLAfoeg5d.CBJ1AeWW8PjCwnMiSt7z/xjtqk3e7m6kxtLkG",
-      "id": 3,
-      "role": 1
-    }
-  ],
-  "carts": [
-    {
-      "idUser": 1,
-      "items": [
-        {
-          "id": 1,
-          "name": "Canon EOS",
-          "quantity": 1
-        },
-        {
-          "id": 2,
-          "name": "Nikon D3500",
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "idUser": 2,
-      "items": [
-        {
-          "id": 3,
-          "name": "Sony A7",
-          "quantity": 1
-        }
-      ]
+      "password": "$2a$10$5yUOn7BOOwR6vaakZF/yD.EiRmpmIBPwrFY.hgpPIxF95JlCndLRm",
+      "role": 1,
+      "id": 1
     }
   ]
 }
