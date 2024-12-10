@@ -1,5 +1,3 @@
-import { IUser } from "@/common/types/user";
-import instance from "@/configs/axios";
 import { Button, Form, FormProps, Input, message } from "antd";
 
 type FieldType = {
@@ -11,13 +9,13 @@ const Register = () => {
   const [messageApi, contextHolder] = message.useMessage();
   const [form] = Form.useForm();
 
-  const onFinish: FormProps<FieldType>["onFinish"] = async (values) => {
+  const onFinish: FormProps<FieldType>["onFinish"] = async () => {
     try {
-      const user: IUser = {
-        email: values.email || "",
-        password: values.password || "",
-        role:0
-      };
+      // const user: IUser = {
+      //   email: values.email || "",
+      //   password: values.password || "",
+      //   role:0
+      // };
       // const {data} = await instance.post(`/signup`, user);
       messageApi.success("Đăng kí thành công");
       form.resetFields()

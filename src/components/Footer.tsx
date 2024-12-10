@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import { Facebook, Google, HeadPhone, LogoFooter, WhatsApp } from "./icons";
 
-type Props = {};
 
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <div className=" border text-center w-[1440px] bg-[#e2f4ff] m-auto">
       <div className="m-auto w-[1310px]  h-[139px] bg-white mt-[42px] rounded-[15px] flex justify-around  items-center text-white">

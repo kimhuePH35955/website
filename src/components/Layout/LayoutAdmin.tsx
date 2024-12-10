@@ -1,12 +1,10 @@
 import { UserOutlined, VideoCameraOutlined } from "@ant-design/icons";
-import type { MenuProps } from "antd";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
 import React, { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
 const { Header, Content, Footer, Sider } = Layout;
 
-type MenuItem = Required<MenuProps>["items"][number];
 
 // function getItem(
 //   label: React.ReactNode,
