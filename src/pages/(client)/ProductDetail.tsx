@@ -14,7 +14,7 @@ import {
   WhatsApp,
 } from "@/components/icons";
 import { getProductsById } from "@/services/product";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
 const ProductDetail = () => {

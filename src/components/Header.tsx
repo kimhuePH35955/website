@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { CarHome, CartHome, LogoWebsite, Map, UserHome } from "./icons";
 

@@ -18,7 +18,7 @@ const Register = () => {
         password: values.password || "",
         role:0
       };
-      const {data} = await instance.post(`/signup`, user);
+      // const {data} = await instance.post(`/signup`, user);
       messageApi.success("Đăng kí thành công");
       form.resetFields()
     } catch (error) {

@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Google, HeadPhone, LogoFooter, WhatsApp } from "./icons";
 

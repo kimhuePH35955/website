@@ -16,8 +16,6 @@ import { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 
-type Props = {};
-
 const HomeWebsite = () => {
   const [messageApi, contextHolder] = message.useMessage();
   const [categories, setCategories] = useState([]);
@@ -110,14 +108,13 @@ const HomeWebsite = () => {
               Popular products
             </p>
             <div className="flex">
-            {categories.map((category: any, index) => (
-              <div className="text-[16px]" key={index}>
-                <button className="w-[139px] h-[45px]  border-2 boder-brown rounded-[20px] ml-[10px] font-medium text-[#1B5A7D]">
-                  {category.name}
-                </button>
-              </div>
-            ))}
-
+              {categories.map((category: any, index) => (
+                <div className="text-[16px]" key={index}>
+                  <button className="w-[139px] h-[45px]  border-2 boder-brown rounded-[20px] ml-[10px] font-medium text-[#1B5A7D]">
+                    {category.name}
+                  </button>
+                </div>
+              ))}
             </div>
           </div>
           {/* group-box */}
